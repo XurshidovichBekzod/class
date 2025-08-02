@@ -57,7 +57,7 @@ const Movie = () => {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Name"
+            placeholder="Title"
             required
           />
           <input
@@ -69,9 +69,16 @@ const Movie = () => {
           />
           <input
             type="text"
+            value={year}
+            onChange={(e) => setYear(e.target.value)}
+            placeholder="Year"
+            required
+          />
+          <input
+            type="text"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
-            placeholder="Reating"
+            placeholder="Country"
             required
           />
           <button type="submit">
